@@ -2,10 +2,10 @@ import Logo from "../NavBar/Logo";
 import NavButton from "../NavBar/NavButton";
 export default function NavBar() {
   return (
-    <header className="py-5.5  flex justify-around items-center fixed top-0 left-0 right-0 z-100">
+    <header className="py-5.5  flex justify-around items-center fixed top-0 left-0 right-0 z-100 text-white">
       <Logo />
       <nav>
-        <ul className="flex gap-6 font-bold ">
+        <ul className="flex gap-6 font-bold text-white">
           <li>
             <a href="#about">About</a>
           </li>
