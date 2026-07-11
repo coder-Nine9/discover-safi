@@ -1,10 +1,20 @@
-export default function LocationLabel({ text }) {
+export default function LocationLabel({ text, m, textS, textColor }) {
   return (
     <div
-      className=" text-[18px] tracking-[0.2em] uppercase flex items-center gap-3 mb-6.5"
-      style={{ fontFamily: "'Space Mono', monospace" }}
+      className=" font-semibold tracking-[0.3em] uppercase flex items-center gap-3 "
+      style={{
+        fontFamily: "'Space Mono', monospace",
+        marginBottom: m,
+        fontSize: textS,
+        color: textColor,
+      }}
     >
-      <span className="w-10 h-px bg-[#E8D9BC]"></span>
+      <span
+        className=" w-10  h-px"
+        style={{
+          backgroundColor: textColor,
+        }}
+      ></span>
       {text}
     </div>
   );

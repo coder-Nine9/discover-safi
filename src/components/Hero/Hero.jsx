@@ -2,12 +2,14 @@ import safiHero from "../../assets/images/safiHero.png";
 
 import HeroBackGround from "./HeroBackground";
 import HeroContainer from "./HeroContainer";
-import HeroState from "./HeroState/HeroState";
+import HeroStatistic from "./HeroStatistic/HeroStatistic";
+import ScrollIcon from "./ScrollIcon";
 export default function Hero() {
   return (
     <HeroBackGround image={safiHero}>
       <HeroContainer />
-      <HeroState />
+      <HeroStatistic />
+      <ScrollIcon />
     </HeroBackGround>
   );
 }
