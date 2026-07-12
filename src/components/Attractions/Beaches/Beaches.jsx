@@ -3,7 +3,7 @@ import Card from "./Card";
 //images
 import sidiBouzid from "../../../assets/images/sidiBouzid.png";
 import lallaFatna from "../../../assets/images/LalaFatna.png";
-import safiBeach from "../../../assets/images/safiBeach.png";
+import safiBeach from "../../../assets/images/SafiBeach.png";
 import souiriaLakdima from "../../../assets/images/Souiria Lakdima.png";
 import capeBeddouza from "../../../assets/images/Cape Beddouza.png";
 import sidiKaram from "../../../assets/images/Sidi Karam Addaif.png";
