@@ -1,0 +1,26 @@
+import SectionHeader from "../SectionHeader";
+import { SwiperSlide } from "swiper/react";
+import { ActivitiesList } from "../../Data/Activities";
+import SwiperCard from "./SwiperCard";
+import ActivityCard from "./ActivityCard";
+export default function Activities() {
+  const activitySlides = ActivitiesList.map((activity) => {
+    return (
+      <SwiperSlide key={activity.id} className="w-auto!">
+        <ActivityCard activity={activity} />
+      </SwiperSlide>
+    );
+  });
+  return (
+    <div className="py-30 bg-[#F7F1E3]">
+      <div className="px-8 max-w-[81.5%] m-auto">
+        <SectionHeader
+          label="Things to do"
+          title="An active coastline"
+          description="Eight ways to spend your days, from the water to the potter's wheel."
+        />
+        <SwiperCard>{activitySlides}</SwiperCard>
+      </div>
+    </div>
+  );
+}

@@ -1,10 +1,10 @@
-import LocationLabel from "../../Hero/LocationLabel";
+import LocationLabel from "../Hero/LocationLabel";
 
-export default function Content() {
+export default function SectionHeader({ label, title, description }) {
   return (
     <div className="w-157.5 mb-16">
       <LocationLabel
-        text={"Plan your route"}
+        text={label}
         m={"16px"}
         textS={"12px"}
         textColor={"#C1663F"}
@@ -17,11 +17,10 @@ export default function Content() {
           fontOpticalSizing: "auto",
         }}
       >
-        Find your way to the coast
+        {title}
       </h1>
       <p className="text-[16.5px] mt-4 font-['inter',sans-serif] text-[#43555f] leading-6.5 font-medium tracking-[1px] ">
-        Share your location too see live distance and drive-time estimates to
-        every beach featured on this page.
+        {description}
       </p>
     </div>
   );

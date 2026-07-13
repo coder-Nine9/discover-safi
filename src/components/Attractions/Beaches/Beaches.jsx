@@ -1,6 +1,5 @@
-import Content from "./Content";
 import Card from "./Card";
-
+import SectionHeader from "../../Attractions/SectionHeader";
 import { contentList } from "../../Data/Beaches";
 
 //swiper
@@ -23,8 +22,12 @@ export default function Beaches() {
   return (
     <div className="py-30 bg-[#F7F1E3]">
       <div className="px-8 max-w-[81.5%] m-auto">
-        <Content />
-
+        <SectionHeader
+          label="Featured beaches"
+          title="Six coastlines, six moods"
+          description="From cliffside surf breaks to a sheltered lagoon known for its oysters —
+        each beach near Safi has its own character."
+        />
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
