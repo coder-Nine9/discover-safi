@@ -12,7 +12,7 @@ export default function Card({ content }) {
   return (
     <div className="group rounded-4xl flex flex-col bg-white w-68.25 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-7 relative">
       <div className="px-3.5 py-1.5 text-[12px] text-white bg-[#FFFFFF24] rounded-[100px] backdrop-blur-md border border-[#ffffff59] absolute top-3.5 left-3.5  text-center z-10 font-medium ">
-        {content.distance}
+        {content.distance} From Safi
       </div>
       <div className="bg-white text-[#0B2E42]  text-[12.5px] px-3 py-1.5 rounded-full absolute top-3.5  right-3.5 z-10 font-bold text-center">
         ⭐{content.rating}
