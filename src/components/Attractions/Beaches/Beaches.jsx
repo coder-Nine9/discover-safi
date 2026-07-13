@@ -1,5 +1,6 @@
 import Content from "./Content";
 import Card from "./Card";
+
 import { contentList } from "../../Data/Beaches";
 
 //swiper
