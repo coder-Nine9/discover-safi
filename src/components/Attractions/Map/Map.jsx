@@ -3,7 +3,7 @@ import Container from "./Container";
 import map from "../../../assets/images/map.png";
 export default function Map() {
   return (
-    <div className="py-30">
+    <div className="py-30" id="Map">
       <div className="px-8 max-w-[81.5%] m-auto">
         <SectionHeader
           label="Plan your route"

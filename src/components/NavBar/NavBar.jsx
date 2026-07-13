@@ -7,7 +7,7 @@ export default function NavBar() {
       <nav>
         <ul className="flex gap-6 font-bold text-white ">
           <li>
-            <a className="link-hover" href="#about">
+            <a className="link-hover" href="#About">
               About
             </a>
           </li>
@@ -27,8 +27,8 @@ export default function NavBar() {
             </a>
           </li>
           <li>
-            <a className="link-hover" href="#galary">
-              galary
+            <a className="link-hover" href="#Watch">
+              Watch
             </a>
           </li>
           <li>
