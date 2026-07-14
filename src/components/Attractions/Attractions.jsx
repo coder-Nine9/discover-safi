@@ -4,6 +4,7 @@ import Map from "./Map/Map";
 import Activities from "./Activities/Activities";
 import Video from "./Video/Video";
 import Restaurants from "./Restaurant/Restaurants";
+import Reviews from "./Reviews/Reviews";
 export default function Attractions() {
   return (
     <div>
@@ -13,6 +14,7 @@ export default function Attractions() {
       <Activities />
       <Video />
       <Restaurants />
+      <Reviews />
     </div>
   );
 }
