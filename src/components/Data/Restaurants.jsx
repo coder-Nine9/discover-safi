@@ -5,7 +5,7 @@ import Mojok from "../../assets/images/Restaurants/Mojok.jpg";
 import LeRooftop from "../../assets/images/Restaurants/LeRooftop.jpg";
 import LosNachos from "../../assets/images/Restaurants/LosNachos.jpg";
 import Assala from "../../assets/images/Restaurants/Assala.jpg";
-import Korten from "../../assets/images/Restaurants/Korten.jpg";
+import Korten from "../../assets/images/Restaurants/korten.jpg";
 import Bordeaux from "../../assets/images/Restaurants/Bordeaux.jpg";
 import ExtraBlack from "../../assets/images/Restaurants/Extrablack.jpg";
 import ChezSaid from "../../assets/images/Restaurants/ChezSaid.jpg";
