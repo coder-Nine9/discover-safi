@@ -5,6 +5,7 @@ import Activities from "./Activities/Activities";
 import Video from "./Video/Video";
 import Restaurants from "./Restaurant/Restaurants";
 import Reviews from "./Reviews/Reviews";
+import Contact from "./Contact/Contact";
 export default function Attractions() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Attractions() {
       <Video />
       <Restaurants />
       <Reviews />
+      <Contact />
     </div>
   );
 }

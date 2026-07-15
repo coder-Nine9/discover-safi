@@ -12,8 +12,8 @@ export default function ReviewsSwiper({ children }) {
   return (
     <Swiper
       style={{
-        "--swiper-navigation-color": "#000000",
-        "--swiper-pagination-color": "#000000",
+        "--swiper-navigation-color": "#C1663F",
+        "--swiper-pagination-color": "#FFFFFF",
       }}
       autoplay={{
         delay: 3000,
