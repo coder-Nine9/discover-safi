@@ -1,13 +1,13 @@
 import NavBar from "./components/NavBar/NavBar";
 import Hero from "./components/Hero/Hero";
-import Attractions from "./components/Attractions/Attractions";
+import Sections from "./components/Sections/Sections";
 import Footer from "./components/Footer/Footer";
 export default function VistSafi() {
   return (
     <>
       <NavBar />
       <Hero />
-      <Attractions />
+      <Sections />
       <Footer />
     </>
   );

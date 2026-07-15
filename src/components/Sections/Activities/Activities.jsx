@@ -12,7 +12,7 @@ export default function Activities() {
     );
   });
   return (
-    <div className="py-30 bg-[#F7F1E3]" id="Activities">
+    <section className="py-30 bg-[#F7F1E3]" id="Activities">
       <div className="px-8 max-w-[81.5%] m-auto">
         <SectionHeader
           label="Things to do"
@@ -21,6 +21,6 @@ export default function Activities() {
         />
         <SwiperCard>{activitySlides}</SwiperCard>
       </div>
-    </div>
+    </section>
   );
 }

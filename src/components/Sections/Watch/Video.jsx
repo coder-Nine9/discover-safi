@@ -2,7 +2,7 @@ import SectionHeader from "../SectionHeader";
 
 export default function Video() {
   return (
-    <div className="py-30 bg-white" id="Watch">
+    <section className="py-30 bg-white" id="Watch">
       <div className="px-8 max-w-[81.5%] m-auto">
         <SectionHeader
           label="Featured Film"
@@ -18,6 +18,6 @@ export default function Video() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

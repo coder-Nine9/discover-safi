@@ -12,7 +12,7 @@ export default function Restaurants() {
     );
   });
   return (
-    <section className="py-30 bg-[#F7F1E3]  ">
+    <section className="py-30 bg-[#F7F1E3]" id="Restaurants">
       <div className="px-8 max-w-[81.5%] m-auto">
         <SectionHeader
           label="Where to eat"

@@ -1,9 +1,9 @@
-import SectionHeader from "../../Attractions/SectionHeader";
+import SectionHeader from "../../Sections/SectionHeader";
 import Container from "./Container";
 import map from "../../../assets/images/map.png";
 export default function Map() {
   return (
-    <div className="py-30" id="Map">
+    <section className="py-30" id="Map">
       <div className="px-8 max-w-[81.5%] m-auto">
         <SectionHeader
           label="Plan your route"
@@ -21,6 +21,6 @@ export default function Map() {
           <Container />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
