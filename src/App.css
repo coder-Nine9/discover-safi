@@ -4,6 +4,11 @@
     --font-fraunces: "Fraunces", serif;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 .link-hover {
     position: relative;
     display: inline-block;
