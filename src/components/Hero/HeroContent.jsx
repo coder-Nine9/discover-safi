@@ -2,7 +2,7 @@ export default function HeroContent() {
   return (
     <div className="text-left">
       <h1
-        className="mb-5.5 text-white text-[clamp(48px,8vw,96px)] leading-[1.08] tracking-[-0.01em]"
+        className="mb-5.5 text-white text-[clamp(48px,4vw,96px)] leading-[1.08] tracking-[-0.01em]"
         style={{
           fontFamily: "'Fraunces', serif",
           fontWeight: 600,

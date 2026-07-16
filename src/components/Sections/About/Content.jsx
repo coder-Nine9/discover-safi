@@ -3,7 +3,7 @@ import Text from "./Text";
 import DestinationStats from "./DestinationStats";
 export default function AboutText() {
   return (
-    <div className="w-138.25">
+    <div className="w-full max-w-xl">
       <LocationLabel
         text={"About the city"}
         m={"16px"}
@@ -11,7 +11,7 @@ export default function AboutText() {
         textColor={"#C1663F"}
       />
       <h3
-        className=" text-[24px]"
+        className=" text-2xl md:text-3xl lg:text-4xl"
         style={{
           fontFamily: "'Fraunces', serif",
           fontWeight: 600,

@@ -3,7 +3,7 @@ import beach from "../../../assets/images/About-beach.png";
 
 export default function Images() {
   return (
-    <div className="relative z-0">
+    <div className="relative z-0 w-[90%] xl:max-w-[40%]">
       <img
         className="max-w-full rounded-4xl shadow-xl "
         src={mainImage}
