@@ -21,7 +21,7 @@ export default function Beaches() {
   });
   return (
     <section className="py-30 bg-[#F7F1E3]" id="Beaches">
-      <div className="px-8 max-w-[81.5%] m-auto">
+      <div className="px-4 lg:px-8 max-w-[81.5%] m-auto">
         <SectionHeader
           label="Featured beaches"
           title="Six coastlines, six moods"

@@ -1,6 +1,6 @@
 export default function Info() {
   return (
-    <div className="text-white flex flex-col font-['Inter',sans-serif] bg-[linear-gradient(160deg,#1B5D8C,#123F5E)]  rounded-4xl p-11 w-[42%]">
+    <div className="text-white flex flex-col font-['Inter',sans-serif] bg-[linear-gradient(160deg,#1B5D8C,#123F5E)]  rounded-4xl p-11 w-full lg:w-[42%]">
       <h1
         className="mb-3 text-[26px] font-semibold "
         style={{

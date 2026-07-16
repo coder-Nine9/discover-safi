@@ -1,6 +1,6 @@
 export default function Form() {
   return (
-    <form className="flex-1">
+    <form className="flex-1 w-full">
       <div className="grid grid-cols-2 gap-x-5 gap-y-6">
         <Field label="Full name" placeHolder="Your name" />
 

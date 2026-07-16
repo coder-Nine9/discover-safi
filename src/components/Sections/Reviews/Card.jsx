@@ -1,8 +1,8 @@
 export default function Card({ review }) {
   return (
-    <div className="flex flex-col justify-center items-center w-180">
+    <div className="flex flex-col justify-center items-center max-w-180">
       <h1
-        className=" text-[26px] mb-7 leading-6 font-bold tracking-[0.02em]"
+        className="text-[18px] lg:text-[20px] xl:text-[26px] mb-7 leading-6 font-bold tracking-[0.02em] w-75 lg:w-125 xl:w-full"
         style={{
           fontFamily: "'Fraunces', serif",
           fontWeight: 600,

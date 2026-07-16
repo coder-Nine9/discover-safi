@@ -2,7 +2,7 @@ import LocationLabel from "../Hero/LocationLabel";
 
 export default function SectionHeader({ label, title, description }) {
   return (
-    <div className="w-157.5 mb-16">
+    <div className="max-w-157.5 mb-16">
       <LocationLabel
         text={label}
         m={"16px"}
@@ -10,7 +10,7 @@ export default function SectionHeader({ label, title, description }) {
         textColor={"#C1663F"}
       />
       <h1
-        className=" text-[48px]"
+        className=" text-[35px] lg:text-[48px]"
         style={{
           fontFamily: "'Fraunces', serif",
           fontWeight: 600,

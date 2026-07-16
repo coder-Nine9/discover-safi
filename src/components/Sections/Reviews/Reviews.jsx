@@ -17,7 +17,7 @@ export default function Reviews() {
   });
   return (
     <section className="py-30 bg-[#0B2E42] text-white  text-center ">
-      <div className="px-8 max-w-[81.5%] m-auto">
+      <div className="px-4 lg:px-8 max-w-[81.5%] m-auto ">
         <h3
           className=" font-bold tracking-[0.3em] uppercase flex justify-center items-center gap-3  "
           style={{
