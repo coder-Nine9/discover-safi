@@ -25,7 +25,6 @@ export default function NavBar() {
       }}
       transition={{ duration: 0.3 }}
       className="py-5.5  flex justify-between px-6 items-center fixed top-0 left-0 right-0 z-100 "
-      id="Home"
     >
       <Logo />
 

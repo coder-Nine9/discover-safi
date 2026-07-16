@@ -1,6 +1,7 @@
 export default function HeroBackGround({ children, image }) {
   return (
     <div
+      id="Home"
       className=" h-screen min-h-170 bg-cover bg-center flex flex-col  justify-center items-center text-[#E8D9BC] text-left"
       style={{
         backgroundImage: `
