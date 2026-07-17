@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Nav({ flex = "row" }) {
   const links = [
     "About",
@@ -9,7 +11,11 @@ export default function Nav({ flex = "row" }) {
     "Contact",
   ];
   return (
-    <nav>
+    <motion.nav
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+    >
       <ul
         className="flex gap-6 font-bold "
         style={{
@@ -24,6 +30,6 @@ export default function Nav({ flex = "row" }) {
           </li>
         ))}
       </ul>
-    </nav>
+    </motion.nav>
   );
 }

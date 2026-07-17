@@ -4,6 +4,7 @@ export default function NavButton({ size = "" }) {
   return (
     <>
       <motion.button
+        initial={{ x: 30 }}
         animate={{
           x: [0, 0, 5, 5, 0],
           y: [0, 5, 5, 0, 0],

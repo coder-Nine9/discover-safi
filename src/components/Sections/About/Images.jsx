@@ -1,9 +1,14 @@
 import mainImage from "../../../assets/images/khazaf.jpg";
 import beach from "../../../assets/images/About-beach.png";
-
+import { motion } from "framer-motion";
 export default function Images() {
   return (
-    <div className="relative z-0 w-[90%] xl:max-w-[40%]">
+    <motion.div
+      initial={{ x: -50, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.6, delay: 0.4 }}
+      className="relative z-0 w-[90%] xl:max-w-[40%]"
+    >
       <img
         className="max-w-full rounded-4xl shadow-xl "
         src={mainImage}
@@ -19,6 +24,6 @@ export default function Images() {
         <br /> fortified
         <br /> 1508
       </div>
-    </div>
+    </motion.div>
   );
 }

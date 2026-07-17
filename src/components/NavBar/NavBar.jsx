@@ -23,7 +23,7 @@ export default function NavBar() {
           : "0 0 0 rgba(0,0,0,0)",
         backdropFilter: scrolled ? "blur(12px)" : "blur(0px)",
       }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.6 }}
       className="py-5.5  flex justify-between px-6 items-center fixed top-0 left-0 right-0 z-100 "
     >
       <Logo />

@@ -1,5 +1,5 @@
 import { Swiper } from "swiper/react";
-
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
@@ -7,7 +7,11 @@ import { EffectCards } from "swiper/modules";
 
 export default function SwiperCard({ children }) {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.3, delay: 0.2 }}
+    >
       <Swiper
         effect={"cards"}
         grabCursor={true}
@@ -16,6 +20,6 @@ export default function SwiperCard({ children }) {
       >
         {children}
       </Swiper>
-    </>
+    </motion.div>
   );
 }
