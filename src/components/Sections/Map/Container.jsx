@@ -2,7 +2,7 @@
 import BeachesDropDown from "./BeachesDropDown";
 export default function Container() {
   return (
-    <div className="p-9 bg-[#0F3B54] rounded-2xl max-w-fit h-fit">
+    <div className="p-9 bg-[#0F3B54] rounded-2xl w-full h-fit ">
       <h1 className="mb-1.5 text-[15px] uppercase font-['Space_Mono',monospace] font-extrabold tracking-wider text-[#E8D9BC] leading-[1.8]">
         Your Location
       </h1>

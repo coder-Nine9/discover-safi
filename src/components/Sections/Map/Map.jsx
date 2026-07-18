@@ -11,7 +11,7 @@ export default function Map() {
           description="Share your location too see live distance and drive-time estimates to
         every beach featured on this page."
         />
-        <div className=" flex justify-evenly flex-col-reverse  items-center xl:flex-row gap-10">
+        <div className=" flex justify-evenly flex-col-reverse  xl:flex-row gap-10">
           <img
             className=" border-8 border-[#0F3B54] rounded-xl w-full xl:w-125"
             src={map}
