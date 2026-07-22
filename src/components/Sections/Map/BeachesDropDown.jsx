@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { contentList } from "../../Data/Beaches";
-export default function BeachesDropDown() {
+
+export default function BeachesDropDown({ handleDestination }) {
   const [option, setOption] = useState("Select Beach");
   const [isSelected, setIsSelected] = useState(false);
 
@@ -10,6 +11,7 @@ export default function BeachesDropDown() {
         onClick={() => {
           setOption(list.title);
           setIsSelected(false);
+          handleDestination({ lat: list.lat, lng: list.lng });
         }}
         key={list.id}
         className="group flex items-center justify-between p-3 text-left hover:bg-[#0F3B54] transition-colors duration-150 border-b border-white/5 last:border-none"
