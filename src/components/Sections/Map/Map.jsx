@@ -55,7 +55,7 @@ export default function Map() {
                 : [userPosition.lat, userPosition.lng]
             }
             zoom={userPosition === null ? 12 : 15}
-            className=" border-8 border-[#0F3B54] rounded-lg w-full xl:w-400 xl:h-100 "
+            className=" border-5 border-[#0F3B54] rounded-lg w-full h-100 xl:w-400 xl:h-100 z-1"
           >
             <TileLayer
               url={"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}
