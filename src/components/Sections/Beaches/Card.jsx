@@ -3,7 +3,7 @@ export default function Card({ content }) {
     return (
       <li
         key={content.id}
-        className="text-[11px] text-[#123F5E] font-[inter,sans-serif] font-semibold bg-[#F7F1E3] px-2.5 py-1.25 rounded-full tracking-[0.6px]"
+        className="rounded-full border border-[#E8D9BC] bg-[#FCF8EF] px-3 py-1.5 text-[11px] font-semibold tracking-wide text-[#0F3B54] transition-colors duration-300 hover:bg-[#E8D9BC]"
       >
         {category}
       </li>
@@ -29,17 +29,22 @@ export default function Card({ content }) {
         <p className="text-[14.5px] text-[#5A6B73] font-[inter,sans-serif] leading-6 font-medium tracking-[1px] ">
           {content.details}
         </p>
-        <ul className=" flex gap-2 list-none">{categories}</ul>
+        <ul className=" flex  justify-center items-center gap-2 list-none">
+          {categories}
+        </ul>
         <div className="flex justify-between mt-1.5">
-          <p className="text-[13px] text-[#8A9AA2] font-[inter,sans-serif]  font-medium tracking-[0.6px] ">
+          <p className="text-[13px] text-[#8A9AA2] font-['inter',sans-serif]  font-medium tracking-[0.6px]  ">
             {content.duration}
           </p>
-          <button className="group text-[13.5px] text-[#C1663F] font-[inter,sans-serif]  font-bold  cursor-pointer ">
+          <a
+            href={"#Map"}
+            className="group text-[13.5px] text-[#C1663F] font-[inter,sans-serif]  font-bold  cursor-pointer "
+          >
             Explore Map{" "}
             <span className="inline-block transition-all duration-300 group-hover:translate-x-1">
               →
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

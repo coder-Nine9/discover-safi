@@ -1,10 +1,16 @@
 import Statistic from "../../Hero/HeroStatistic/Statistic";
-
+import { motion } from "framer-motion";
 export default function DestinationStats() {
   return (
-    <div className=" mt-12 pt-10 flex gap-10 text-left border-t-2 border-gray-200">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.8 }}
+      className=" mt-12 pt-10 flex gap-10 text-left border-t-2 border-gray-200"
+    >
       <Statistic
-        NumbersSate={"800"}
+        NumbersSate={800}
+        type={"integer"}
         TextState={"Years of pottery heritage"}
         textSize={"40px"}
         paraSize={"13px"}
@@ -13,7 +19,8 @@ export default function DestinationStats() {
         paraColor={"#6B7B83"}
       />
       <Statistic
-        NumbersSate={"6"}
+        NumbersSate={6}
+        type={"integer"}
         TextState={"Beaches within 45 min"}
         textSize={"40px"}
         paraSize={"13px"}
@@ -22,7 +29,8 @@ export default function DestinationStats() {
         paraColor={"#6B7B83"}
       />
       <Statistic
-        NumbersSate={"120,000"}
+        NumbersSate={120000}
+        type={"largeNumber"}
         TextState={"Residents, still uncrowded"}
         textSize={"40px"}
         paraSize={"13px"}
@@ -30,6 +38,6 @@ export default function DestinationStats() {
         tracking={"0.05em"}
         paraColor={"#6B7B83"}
       />
-    </div>
+    </motion.div>
   );
 }

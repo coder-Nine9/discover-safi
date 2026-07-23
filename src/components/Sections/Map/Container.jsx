@@ -5,9 +5,15 @@ export default function Container() {
   return (
     <motion.div
       className="p-9 bg-[#0F3B54] rounded-2xl max-w-fit h-fit"
-      initial={{ opacity: 0, x: 400 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.6, ease: "easeInOut", delay: 0.6 }}
+      initial={{ opacity: 0, x: 80, scale: 0.97 }}
+      whileInView={{ opacity: 1, x: 0, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 90,
+        damping: 16,
+        delay: 0.4,
+      }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <h1 className="mb-1.5 text-[15px] uppercase font-['Space_Mono',monospace] font-extrabold tracking-wider text-[#E8D9BC] leading-[1.8]">
         Your Location

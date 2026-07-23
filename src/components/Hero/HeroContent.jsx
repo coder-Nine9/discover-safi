@@ -7,6 +7,7 @@ export default function HeroContent() {
         initial={{ opacity: 0, height: 0 }}
         whileInView={{ opacity: 1, height: "auto" }}
         transition={{ duration: 0.6, delay: 0.3, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 1 }}
         className="mb-5.5 text-white text-[clamp(48px,4vw,96px)] leading-[1.08] tracking-[-0.01em]"
         style={{
           fontFamily: "'Fraunces', serif",
@@ -20,6 +21,7 @@ export default function HeroContent() {
         initial={{ opacity: 0, height: 0 }}
         whileInView={{ opacity: 1, height: "auto" }}
         transition={{ duration: 0.6, delay: 0.5, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 1 }}
         className="text-[19px] max-w-130 mb-10 text-[#ffffffd9] font-semibold leading-[1.6]"
         style={{ fontFamily: "'Inter', sans-serif" }}
       >

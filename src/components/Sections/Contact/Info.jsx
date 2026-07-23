@@ -1,6 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function Info() {
   return (
-    <div className="text-white flex flex-col font-['Inter',sans-serif] bg-[linear-gradient(160deg,#1B5D8C,#123F5E)]  rounded-4xl p-11 w-full lg:w-[42%]">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      viewport={{ amount: 0.6 }}
+      className="text-white flex flex-col font-['Inter',sans-serif] bg-[linear-gradient(160deg,#1B5D8C,#123F5E)]  rounded-4xl p-11 w-full lg:w-[42%]"
+    >
       <h1
         className="mb-3 text-[26px] font-semibold "
         style={{
@@ -47,6 +55,6 @@ export default function Info() {
           YT
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
