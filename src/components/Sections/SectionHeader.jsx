@@ -28,7 +28,7 @@ export default function SectionHeader({ label, title, description }) {
         whileInView={{ opacity: 1, x: 0, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.6, ease: "easeInOut" }}
         viewport={{ once: true, amount: 0.4 }}
-        className="text-[16.5px] mt-4 font-['inter',sans-serif] text-[#43555f] leading-6.5 font-medium tracking-[1px] "
+        className="text-[16.5px] mt-4 font-['Georgia', serif ] text-[#43555f] leading-6.5 font-medium tracking-[1px] "
       >
         {description}
       </motion.p>

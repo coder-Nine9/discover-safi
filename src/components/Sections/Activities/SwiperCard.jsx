@@ -17,7 +17,7 @@ export default function SwiperCard({ children }) {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper w-70 h-100 lg:w-100 lg:h-130"
+        className="mySwiper w-70 h-100 lg:w-100 lg:h-130  "
       >
         {children}
       </Swiper>

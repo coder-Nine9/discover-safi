@@ -12,8 +12,8 @@ export default function Activities() {
     );
   });
   return (
-    <section className="py-30 bg-[#F7F1E3]" id="Activities">
-      <div className="px-4 lg:px-8 max-w-[81.5%] m-auto">
+    <section className="py-30 bg-[#F8F1E5] overflow-x-hidden " id="Activities">
+      <div className="px-4 lg:px-8 max-w-[81.5%] m-auto ">
         <SectionHeader
           label="Things to do"
           title="An active coastline"

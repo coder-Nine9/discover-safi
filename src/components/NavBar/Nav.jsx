@@ -24,7 +24,11 @@ export default function Nav({ flex = "row" }) {
       >
         {links.map((link) => (
           <li key={link}>
-            <a className="link-hover" href={`#${link}`}>
+            <a
+              className="link-hover"
+              href={`#${link}`}
+              style={{ fontFamily: "var(--font-fraunces)" }}
+            >
               {link}
             </a>
           </li>

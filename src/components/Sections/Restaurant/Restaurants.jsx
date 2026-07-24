@@ -53,7 +53,7 @@ export default function Restaurants() {
     setSelected(optionSelected);
   }
   return (
-    <section className="py-30 bg-[#F7F1E3]" id="Restaurants">
+    <section className="py-30 bg-[#F8F1E5]" id="Restaurants">
       <div className="px-8 max-w-[81.5%] m-auto">
         <div className="flex flex-col w-full ">
           <SectionHeader

@@ -2,7 +2,7 @@ import SectionHeader from "../SectionHeader";
 import { motion } from "framer-motion";
 export default function Video() {
   return (
-    <section className="py-30 bg-white  " id="Watch">
+    <section className="py-30 bg-[#EEF7FB]  " id="Watch">
       <div className="px-4 lg:px-8 max-w-[81.5%] m-auto  ">
         <SectionHeader
           label="Featured Film"

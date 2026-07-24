@@ -8,7 +8,7 @@ import Reviews from "./Reviews/Reviews";
 import Contact from "./Contact/Contact";
 export default function Sections() {
   return (
-    <main>
+    <main className="w-full overflow-x-hidden ">
       <About />
       <Beaches />
       <Map />

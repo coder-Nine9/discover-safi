@@ -1,6 +1,6 @@
 export default function ScrollIcon() {
   return (
-    <div className="absolute left-1/2 top-[85%] -translate-x-1/2 flex flex-col items-center gap-3">
+    <div className="absolute left-1/2 top-[90%] lg:top-[89%] xl:top-[85%] -translate-x-1/2 flex flex-col items-center gap-3">
       <span className="font-['Space_Mono'] text-[11px] uppercase tracking-[0.3em] text-white">
         Scroll
       </span>

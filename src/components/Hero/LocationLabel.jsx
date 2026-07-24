@@ -7,11 +7,10 @@ export default function LocationLabel({ text, m, textS, textColor }) {
       whileInView={{ opacity: 1, height: "auto" }}
       transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
       viewport={{ once: true, amount: 1 }}
-      className=" font-semibold tracking-[0.3em] uppercase flex items-center gap-3 "
+      className={`font-semibold tracking-[0.3em] uppercase flex items-center gap-3 ${textS}`}
       style={{
         fontFamily: "'Space Mono', monospace",
         marginBottom: m,
-        fontSize: textS,
         color: textColor,
       }}
     >

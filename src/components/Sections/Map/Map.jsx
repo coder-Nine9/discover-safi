@@ -38,8 +38,8 @@ export default function Map() {
     setDestination(userDestination);
   }
   return (
-    <section className="py-30" id="Map">
-      <div className="px-4 lg:px-8 max-w-[81.5%] m-auto">
+    <section className="bg-[#EEF7FB] py-30" id="Map">
+      <div className=" px-4 lg:px-8 max-w-[81.5%] m-auto">
         <SectionHeader
           label="Plan your route"
           title="Find your way to the coast"
@@ -55,7 +55,7 @@ export default function Map() {
                 : [userPosition.lat, userPosition.lng]
             }
             zoom={userPosition === null ? 12 : 15}
-            className=" border-5 border-[#0F3B54] rounded-lg w-full h-100 xl:w-400 xl:h-100 z-1"
+            className="  rounded-2xl w-full h-100 xl:w-400 xl:h-112.5 z-1"
           >
             <TileLayer
               url={"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}

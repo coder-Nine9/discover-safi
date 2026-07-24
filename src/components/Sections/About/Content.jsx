@@ -4,10 +4,10 @@ import DestinationStats from "./DestinationStats";
 import { motion } from "framer-motion";
 export default function AboutText() {
   return (
-    <div className="w-full max-w-xl">
+    <div className="w-78 md:max-w-xl md:w-full  ">
       <LocationLabel
         text={"About the city"}
-        m={"16px"}
+        m={"12px lg:16px"}
         textS={"12px"}
         textColor={"#C1663F"}
       />
@@ -31,7 +31,7 @@ export default function AboutText() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 1 }}
+        viewport={{ once: false, amount: 0.4 }}
         transition={{
           duration: 0.8,
           delay: 0.2,
@@ -42,8 +42,8 @@ export default function AboutText() {
           text1="Safi has been shaped by two forces: the Atlantic and clay. Long before it became Morocco's largest sardine port, the hills above the medina were already home to potters firing the deep cobalt-and-white ceramics the city is still known for today."
           text2="Portuguese ramparts, the Kechla citadel, and the Colline des Potiers — the potters' hill — sit within walking distance of a working harbour where boats still return each afternoon with the day's catch. Just beyond the city, a string of quiet, largely undeveloped beaches stretches along dramatic ochre cliffs."
         />
+        <DestinationStats />
       </motion.div>
-      <DestinationStats />
     </div>
   );
 }

@@ -28,10 +28,9 @@ export default function Statistic({
         display={display}
       />
       <p
-        className="   font-medium transform-[scaleY(1.2)] "
+        className={`${paraSize} font-medium transform-[scaleY(1.2)] `}
         style={{
           fontFamily: "'Inter', sans-serif",
-          fontSize: paraSize,
           color: paraColor,
           letterSpacing: tracking,
         }}
@@ -70,12 +69,11 @@ function Counter({ value, size, color, type, display = "" }) {
   }, [isInView, value, count]);
 
   return (
-    <div className={"flex justify-center items-center"}>
+    <div className={`${size} flex justify-center items-center`}>
       <motion.h1
         className="  font-bold"
         style={{
           fontFamily: "'Fraunces', serif",
-          fontSize: size,
           color: color,
         }}
         ref={ref}

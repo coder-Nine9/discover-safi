@@ -12,8 +12,8 @@ export default function DestinationStats() {
         NumbersSate={800}
         type={"integer"}
         TextState={"Years of pottery heritage"}
-        textSize={"40px"}
-        paraSize={"13px"}
+        textSize={"text-[30px] lg:text-[40px]"}
+        paraSize={"text-[12px] lg:text-[13px]"}
         textColor={"#1B5D8C"}
         tracking={"0.05em"}
         paraColor={"#6B7B83"}
@@ -22,8 +22,8 @@ export default function DestinationStats() {
         NumbersSate={6}
         type={"integer"}
         TextState={"Beaches within 45 min"}
-        textSize={"40px"}
-        paraSize={"13px"}
+        textSize={"text-[30px] lg:text-[40px]"}
+        paraSize={"text-[12px] lg:text-[13px]"}
         textColor={"#1B5D8C"}
         tracking={"0.05em"}
         paraColor={"#6B7B83"}
@@ -32,8 +32,8 @@ export default function DestinationStats() {
         NumbersSate={120000}
         type={"largeNumber"}
         TextState={"Residents, still uncrowded"}
-        textSize={"40px"}
-        paraSize={"13px"}
+        textSize={"text-[30px] lg:text-[40px]"}
+        paraSize={"text-[12px] lg:text-[13px]"}
         textColor={"#1B5D8C"}
         tracking={"0.05em"}
         paraColor={"#6B7B83"}

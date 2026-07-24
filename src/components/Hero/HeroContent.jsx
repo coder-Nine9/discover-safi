@@ -22,8 +22,8 @@ export default function HeroContent() {
         whileInView={{ opacity: 1, height: "auto" }}
         transition={{ duration: 0.6, delay: 0.5, ease: "easeInOut" }}
         viewport={{ once: true, amount: 1 }}
-        className="text-[19px] max-w-130 mb-10 text-[#ffffffd9] font-semibold leading-[1.6]"
-        style={{ fontFamily: "'Inter', sans-serif" }}
+        className="text-[19px] max-w-130 mb-10 text-[#ebe9e9] font-semibold leading-[1.6]"
+        style={{ fontFamily: "'Georgia', serif " }}
       >
         Where cobalt-glazed pottery meets the crashing Atlantic. Explore wild
         beaches, a living craft tradition dating back centuries, and a coastline

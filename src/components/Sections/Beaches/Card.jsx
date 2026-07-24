@@ -3,7 +3,7 @@ export default function Card({ content }) {
     return (
       <li
         key={content.id}
-        className="rounded-full border border-[#E8D9BC] bg-[#FCF8EF] px-3 py-1.5 text-[11px] font-semibold tracking-wide text-[#0F3B54] transition-colors duration-300 hover:bg-[#E8D9BC]"
+        className="text-center rounded-full border border-[#E8D9BC] bg-[#FCF8EF] px-3 py-1.5 text-[11px] font-semibold tracking-wide text-[#0F3B54] transition-colors duration-300 hover:bg-[#E8D9BC]"
       >
         {category}
       </li>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import SocialLinks from "../../../UI/SocialLinks";
 export default function Info() {
   return (
     <motion.div
@@ -42,18 +42,17 @@ export default function Info() {
         <p className=" text-[14.5px]  ">hello@visitsafi.ma</p>
       </div>
       <div className="flex gap-5 text-[13px] font-['Inter',sans-serif] pt-7.5 ">
-        <a className=" w-9.5 h-9.5 bg-[#FFFFFF24] rounded-full flex justify-center items-center">
-          IG
-        </a>
-        <a className=" w-9.5 h-9.5 bg-[#FFFFFF24] rounded-full flex justify-center items-center">
-          FB
-        </a>
-        <a className=" w-9.5 h-9.5 bg-[#FFFFFF24] rounded-full flex justify-center items-center">
-          X
-        </a>
-        <a className=" w-9.5 h-9.5 bg-[#FFFFFF24] rounded-full flex justify-center items-center">
-          YT
-        </a>
+        <SocialLinks
+          social={[
+            { name: "IG", link: "https://www.instagram.com/?hl=ar" },
+            { name: "FB", link: "https://www.facebook.com/?locale=ar_AR" },
+            { name: "X", link: "https://www.instagram.com/?hl=ar" },
+            {
+              name: "YT",
+              link: "https://www.youtube.com/@%D8%AD%D9%85%D8%AF%D9%84%D9%84%D9%8701",
+            },
+          ]}
+        />
       </div>
     </motion.div>
   );

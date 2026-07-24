@@ -54,7 +54,7 @@ export const contentList = [
     lng: -9.0386,
     details:
       "A peaceful stretch of golden sand known for fishing, camping, and water sports in a quiet natural setting.",
-    categories: ["Camping", "Fishing", "Water Sports"],
+    categories: ["Camping", "Surf", "Fishing"],
     duration: "40 min drive",
     rating: 4.5,
     distance: "36 km ",

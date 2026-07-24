@@ -19,7 +19,7 @@ export default function SwiperGrid({ children }) {
       spaceBetween={30}
       grabCursor={true}
       grid={{
-        rows: 2,
+        rows: 1,
         fill: "row",
       }}
       pagination={{
@@ -29,15 +29,15 @@ export default function SwiperGrid({ children }) {
       breakpoints={{
         0: {
           slidesPerView: 1,
-          grid: { rows: 2, fill: "row" },
+          grid: { rows: 1, fill: "row" },
         },
         768: {
           slidesPerView: 2,
-          grid: { rows: 2, fill: "row" },
+          grid: { rows: 1, fill: "row" },
         },
         1024: {
           slidesPerView: 3,
-          grid: { rows: 2, fill: "row" },
+          grid: { rows: 1, fill: "row" },
         },
       }}
     >
