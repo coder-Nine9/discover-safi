@@ -6,10 +6,12 @@ import HeroStatistic from "./HeroStatistic/HeroStatistic";
 import ScrollIcon from "./ScrollIcon";
 export default function Hero() {
   return (
-    <HeroBackGround image={safiHero}>
-      <HeroContainer />
-      <HeroStatistic />
-      <ScrollIcon />
-    </HeroBackGround>
+    <div>
+      <HeroBackGround image={safiHero}>
+        <HeroContainer />
+        <HeroStatistic />
+        <ScrollIcon />
+      </HeroBackGround>
+    </div>
   );
 }

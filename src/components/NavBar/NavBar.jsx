@@ -15,6 +15,7 @@ export default function NavBar() {
 
   return (
     <motion.header
+      initial={{ height: 0, opacity: 0 }}
       animate={{
         backgroundColor: scrolled ? "#FBF7EFC7" : "rgba(11,46,66,0)",
         color: scrolled ? "black" : "white",
@@ -22,8 +23,11 @@ export default function NavBar() {
           ? "0 10px 30px rgba(0,0,0,0.15)"
           : "0 0 0 rgba(0,0,0,0)",
         backdropFilter: scrolled ? "blur(12px)" : "blur(0px)",
+        height: "auto",
+        opacity: 1,
       }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true, amount: 0.4 }}
       className="py-5.5  flex justify-between px-6 items-center fixed top-0 left-0 right-0 z-100 "
     >
       <Logo />

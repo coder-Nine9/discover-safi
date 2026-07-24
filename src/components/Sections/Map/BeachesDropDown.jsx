@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { contentList } from "../../Data/Beaches";
+import { motion, AnimatePresence } from "framer-motion";
+import downIcon from "../../../assets/icons/down.png";
 
 export default function BeachesDropDown({ handleDestination }) {
   const [option, setOption] = useState("Select Beach");
@@ -36,22 +38,35 @@ export default function BeachesDropDown({ handleDestination }) {
     <div className="relative w-full text-white font-sans select-none">
       <div
         onClick={() => setIsSelected(!isSelected)}
-        className="w-full rounded-xl text-white p-3 bg-[#FFFFFF14] outline-none text-left border border-[#FFFFFF24] font-bold tracking-widest cursor-pointer flex justify-between"
+        className="w-full rounded-xl text-white p-3 bg-[#FFFFFF14] outline-none text-left border border-[#FFFFFF24] font-bold tracking-widest cursor-pointer flex justify-between items-center"
       >
         <span className="text-[14px] font-medium tracking-wide">{option}</span>
-        <span
-          className={`text-[10px] text-[#E8D9BC] transition-transform duration-200 `}
-        >
-          ▼
+        <span className={`bg-white rounded-full p-1 `}>
+          <motion.img
+            initial={{ rotate: 0 }}
+            animate={{ rotate: isSelected ? 180 : 0 }}
+            transition={{ duration: 0.3 }}
+            src={downIcon}
+            alt="downIcon"
+            width={"16px"}
+          />
         </span>
       </div>
 
       {/* Dropdown Menu Options */}
-      {isSelected && (
-        <div className="absolute left-0 right-0 top-full mt-1.5 z-10 flex flex-col rounded-lg border border-white/10 bg-[#0F3B5430] shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150 max-h-72 pr-3 overflow-y-auto pt-2.5">
-          {optionList}
-        </div>
-      )}
+      <AnimatePresence>
+        {isSelected && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute left-0 right-0 top-full mt-1.5 z-10 flex flex-col rounded-lg border border-white/10 bg-[#0F3B5430] shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150 max-h-72 pr-3 overflow-y-auto pt-2.5"
+          >
+            {optionList}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

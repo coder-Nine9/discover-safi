@@ -1,7 +1,10 @@
-export default function Text({ text }) {
+export default function Text({ text1, text2 }) {
   return (
     <p className=" text-base  mb-4.5 font-['inter',sans-serif] text-[#43555f] leading-6.5 font-medium tracking-[1px]">
-      {text}
+      {text1}
+      <br />
+      <br />
+      {text2}
     </p>
   );
 }

@@ -1,8 +1,20 @@
 // import { contentList } from "../../Data/Beaches";
+import { motion } from "framer-motion";
 import BeachesDropDown from "./BeachesDropDown";
 export default function Container({ getUserLocation, handleDestination }) {
   return (
-    <div className="p-9 bg-[#0F3B54] rounded-2xl w-full h-fit ">
+    <motion.div
+      className="p-9 bg-[#0F3B54] rounded-2xl w-full h-fit"
+      initial={{ opacity: 0, x: 80, scale: 0.97 }}
+      whileInView={{ opacity: 1, x: 0, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 90,
+        damping: 16,
+        delay: 0.4,
+      }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <h1 className="mb-1.5 text-[15px] uppercase font-['Space_Mono',monospace] font-extrabold tracking-wider text-[#E8D9BC] leading-[1.8]">
         Your Location
       </h1>
@@ -16,6 +28,6 @@ export default function Container({ getUserLocation, handleDestination }) {
         Beaches
       </h1>
       <BeachesDropDown handleDestination={handleDestination} />
-    </div>
+    </motion.div>
   );
 }
